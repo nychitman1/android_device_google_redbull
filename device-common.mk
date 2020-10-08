@@ -981,6 +981,10 @@ PRODUCT_PACKAGES += \
     PresencePolling \
     RcsService
 
+# Shared java libs
+PRODUCT_PACKAGES += \
+    com.android.nfc_extras
+
 #################################################################################
 # This is the End of device-common.mk file.
 # Now, Pickup other split device-common.mk files:
