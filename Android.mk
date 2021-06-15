@@ -54,7 +54,7 @@ $(RFS_MSM_MPSS_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 ALL_DEFAULT_INSTALLED_MODULES += $(RFS_MSM_MPSS_SYMLINKS)
 
 CNE_LIBS := libvndfwk_detect_jni.qti.so
-CNE_SYMLINKS := $(addprefix $(TARGET_OUT_VENDOR)/app/CneApp/lib/arm64/,$(notdir $(CNE_LIBS)))
+CNE_SYMLINKS := $(addprefix $(TARGET_OUT_VENDOR)/app/CneApp/lib/arm64/vendor/lib64,$(notdir $(CNE_LIBS)))
 $(CNE_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@echo "CneApp lib link: $@"
 	@mkdir -p $(dir $@)
